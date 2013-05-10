@@ -15,14 +15,16 @@ Website:        http://www.alexschreyer.net/projects/sketchup-news-plugin/
 
 Name :          SketchUpNews
 
-Version:        1.0
+Version:        1.1
 
-Date :          3/13/2013
+Date :          5/10/2013
 
 Description :   This plugin adds a menu item under Help that shows SketchUp news.
 
 History:        1.0 (3/13/2013):
                 - first version
+                1.1 (5/10/2013):
+                - reorganized folders
                 
 
 =end
