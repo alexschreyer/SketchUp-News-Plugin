@@ -1,7 +1,7 @@
-# Loader for as_plugins/as_sketchupnews/as_sketchupnews.rb
+# Loader for as_sketchupnews/as_sketchupnews.rb
 
-require 'sketchup.rb'
-require 'extensions.rb'
+require 'sketchup'
+require 'extensions'
 
 as_sketchupnews = SketchupExtension.new "SketchUp News", "as_sketchupnews/as_sketchupnews.rb"
 as_sketchupnews.copyright= 'Copyright 2013 Alexander C. Schreyer'
