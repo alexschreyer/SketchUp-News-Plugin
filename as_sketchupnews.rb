@@ -1,6 +1,6 @@
 =begin
 
-Copyright 2013-2016, Alexander C. Schreyer
+Copyright 2013-2020, Alexander C. Schreyer
 All rights reserved
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES,
@@ -15,9 +15,9 @@ Website:        http://www.alexschreyer.net/projects/sketchup-news-plugin/
 
 Name :          SketchUpNews
 
-Version:        1.2
+Version:        1.3
 
-Date :          12/12/2015
+Date :          2/29/2020
 
 Description :   Adds a menu item under Help that shows SketchUp news from blogs, 
                 discussions, and Twitter.
@@ -30,6 +30,9 @@ History:        1.0 (3/13/2013):
                 - Code cleanup
                 - Fixed loader code
                 - Implemented new dialog for 2017
+                1.3 (2/29/2020):
+                - Instance var for dialog (SU 2020 compatibility)
+                
 
 =end
 
@@ -48,7 +51,7 @@ module AS_Extensions
 
   module AS_SketchupNews
   
-    @extversion           = "1.2"
+    @extversion           = "1.3"
     @exttitle             = "SketchUp News"
     @extname              = "as_sketchupnews"
     

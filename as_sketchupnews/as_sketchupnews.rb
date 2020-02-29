@@ -19,18 +19,18 @@ module AS_Extensions
     def self.show_url( title , url )
     # Show website either as a WebDialog or HtmlDialog
     
-      if Sketchup.version.to_f < 17 then  # Use old method
-        d = UI::WebDialog.new( title , true ,
+      if Sketchup.version.to_f < 17 then   # Use old dialog
+        @dlg = UI::WebDialog.new( title , true ,
           title.gsub(/\s+/, "_") , 1000 , 600 , 100 , 100 , true);
-        d.navigation_buttons_enabled = false
-        d.set_url( url )
-        d.show      
-      else
-        d = UI::HtmlDialog.new( { :dialog_title => title, :width => 1000, :height => 600,
+        @dlg.navigation_buttons_enabled = false
+        @dlg.set_url( url )
+        @dlg.show      
+      else   #Use new dialog
+        @dlg = UI::HtmlDialog.new( { :dialog_title => title, :width => 1000, :height => 600,
           :style => UI::HtmlDialog::STYLE_DIALOG, :preferences_key => title.gsub(/\s+/, "_") } )
-        d.set_url( url )
-        d.show
-        d.center
+        @dlg.set_url( url )
+        @dlg.show
+        @dlg.center
       end  
     
     end    
