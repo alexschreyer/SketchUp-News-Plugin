@@ -1,4 +1,4 @@
-SketchUp-News-Plugin
+SketchUp News Extension
 ====================
 
 Copyright 2013-2023, Alexander C. Schreyer
